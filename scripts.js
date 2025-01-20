@@ -28,6 +28,16 @@ const content = {
 };
 
 function setLanguage(lang) {
+    localStorage.setItem('language', lang);
+    updateContent(lang);
+}
+
+function getLanguage() {
+    const lang = localStorage.getItem('language') || 'en';
+    updateContent(lang);
+}
+
+function updateContent(lang) {
     const page = window.location.pathname.split('/').pop().replace('.html', '');
     const elements = document.querySelectorAll('#content h1, #content p, #content section h2, #content section p');
     
@@ -36,3 +46,6 @@ function setLanguage(lang) {
         el.textContent = content[lang][page][key];
     });
 }
+
+// Set the language when the page loads
+window.onload = getLanguage;
