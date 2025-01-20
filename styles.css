@@ -1,85 +1,80 @@
 @font-face {
-    font-family: 'B-NAZANIN';
-    src: url('https://raw.githubusercontent.com/hazardsnow/pweb/main/B-NAZANIN.TTF') format('woff2');
+    font-family: 'BNazanin';
+    src: url('https://raw.githubusercontent.com/student123/final-project/main/fonts/BNazanin.woff2') format('woff2');
 }
 
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9; /* Light grey background */
+    background-color: #f9f9f9;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #004d99; /* Dark blue background */
+    background-color: #004d99;
     color: white;
-    padding: 1rem 2rem;
-    width: 100%; /* Ensure header spans full width */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 0.5rem 1rem;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
 }
 
 .logo-header {
-    height: 60px; /* Adjust the height as needed */
+    height: 40px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #ffcc00; /* Hover color */
+    color: #ffcc00;
 }
 
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #004d99; /* Dark blue background */
+    background-color: #004d99;
     color: white;
-    padding: 1rem;
-    width: 100%; /* Ensure footer spans full width */
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 0.5rem 1rem;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     bottom: 0;
 }
 
 .logo-footer {
-    height: 40px; /* Adjust the height as needed */
+    height: 30px;
 }
 
 .footer-text {
-    margin-left: 1rem;
-    font-size: 1rem; /* Adjust the size as needed */
+    margin-left: 0.5rem;
+    font-size: 0.875rem;
 }
 
-/* Styles for Homepage */
 .centered-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
-    text-align: center; /* Center align the text */
+    height: 100vh;
+    text-align: center;
     background-color: white;
-}
-
-main.centered-content {
-    padding-top: 80px; /* Ensure content is below the header */
-    padding-bottom: 80px; /* Ensure content is above the footer */
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 h1, h2 {
-    color: #004d99; /* Dark blue color */
+    color: #004d99;
 }
 
 p {
@@ -88,21 +83,20 @@ p {
 }
 
 .logo-container {
-    margin-bottom: 2rem; /* Space below the big logo */
+    margin-bottom: 2rem;
 }
 
 .main-logo {
-    height: 150px; /* Adjust the height as needed for the big logo */
+    height: 120px;
 }
 
-/* RTL styles for Persian */
 body.fa, main.fa {
     direction: rtl;
     font-family: 'BNazanin', sans-serif;
 }
 
 body.fa .text-content {
-    text-align: right; /* Right align text for Persian content */
+    text-align: right;
 }
 
 nav a.fa {
@@ -125,21 +119,20 @@ body.fa #fa-content {
     display: block;
 }
 
-/* Description Page Specific Styles */
 main {
-    padding-top: 100px; /* Ensure content is below the header */
-    padding-bottom: 100px; /* Ensure content is above the footer */
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     margin: 2rem;
     max-width: 1200px;
 }
 
 main p {
-    text-align: left; /* Ensure text is left aligned */
+    text-align: left;
 }
 
 body.fa main p {
-    text-align: right; /* Ensure text is right aligned for Persian content */
+    text-align: right;
 }
