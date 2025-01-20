@@ -8,11 +8,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9; /* Light grey background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden; /* Prevent scrolling */
 }
 
 header {
@@ -24,7 +19,7 @@ header {
     padding: 1rem 2rem;
     width: 100%; /* Ensure header spans full width */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    position: absolute;
+    position: fixed;
     top: 0;
 }
 
@@ -49,11 +44,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding-top: 80px; /* Ensure content is below the header */
     text-align: center;
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    border-radius: 8px; /* Rounded corners */
-    padding: 2rem;
 }
 
 h1, h2 {
@@ -63,7 +57,6 @@ h1, h2 {
 p {
     line-height: 1.6;
     color: #333;
-    text-align: left; /* Align text to the left */
 }
 
 .logo-container {
@@ -78,59 +71,4 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #004d99; /* Dark blue background */
-    color: white;
-    padding: 1rem;
-    width: 100%; /* Ensure footer spans full width */
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    position: absolute;
-    bottom: 0;
-}
-
-.logo-footer {
-    height: 40px; /* Adjust the height as needed */
-}
-
-.footer-text {
-    margin-left: 1rem;
-    font-size: 1rem; /* Adjust the size as needed */
-}
-
-.centered-content {
-    text-align: center;
-}
-
-.text-content {
-    text-align: left; /* Left-align the text */
-}
-
-/* RTL styles for Persian */
-body.fa, main.fa {
-    direction: rtl;
-    text-align: right;
-    font-family: 'BNazanin', sans-serif;
-}
-
-nav a.fa {
-    float: left;
-}
-
-header.fa, footer.fa {
-    flex-direction: row-reverse;
-}
-
-.text-content.fa {
-    text-align: right; /* Right-align the text for Persian */
-}
-
-#fa-content {
-    display: none;
-}
-
-body.fa #en-content {
-    display: none;
-}
-
-body.fa #fa-content {
-    display: block;
-}
+    background-color: #004d99;[_{{{CITATION{{{_1{](https://github.com/frame00/oo-elements/tree/cb23701ba21686c12ecca8d856a08f83c7e58000/.github%2FCONTRIBUTING.md)
