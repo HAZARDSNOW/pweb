@@ -1,7 +1,7 @@
 const content = {
     en: {
         index: {
-            title: "Welcome to My Final Project",
+            title: "Welcome to Final Project",
             description: `
                 University of Isfahan<br>
                 Faculty of Computer Engineering<br>
@@ -32,7 +32,7 @@ const content = {
     },
     fa: {
         index: {
-            title: "دانشگاه اصفهان",
+            title: "به پروژه نهایی خوش آمدید",
             description: `
                 دانشگاه اصفهان<br>
                 دانشکده مهندسی کامپیوتر<br>
