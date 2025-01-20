@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'BNazanin';
+    src: url('https://raw.githubusercontent.com/hazardsnow/pweb/main/B_NAZANIN.TTF
+') format('TTF');
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -48,10 +54,16 @@ footer {
     height: 50px; /* Adjust the height as needed */
 }
 
+.footer-text {
+    margin-left: 1rem;
+    font-size: 1rem; /* Adjust the size as needed */
+}
+
 /* RTL styles for Persian */
 body.fa, main.fa {
     direction: rtl;
     text-align: right;
+    font-family: 'BNazanin', sans-serif;
 }
 
 nav a.fa {
