@@ -77,12 +77,20 @@ function getLanguage() {
 
 function updateContent(lang) {
     const page = window.location.pathname.split('/').pop().replace('.html', '');
-    const elements = document.querySelectorAll('#content h1, #content p, #content section h2, #content section p');
+    const elements = document.querySelectorAll('#content h1, #content p, #content section h2, #content section p, #content div');
     
     elements.forEach((el) => {
         const key = el.getAttribute('data-key');
         el.innerHTML = content[lang][page][key];
     });
+    
+    if (lang === 'fa') {
+        document.getElementById('en-content').style.display = 'none';
+        document.getElementById('fa-content').style.display = 'block';
+    } else {
+        document.getElementById('fa-content').style.display = 'none';
+        document.getElementById('en-content').style.display = 'block';
+    }
 }
 
 // Set the language when the page loads
