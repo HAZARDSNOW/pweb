@@ -14,7 +14,7 @@ header {
 }
 
 .logo-header {
-    height: 200px; /* L */
+    height: 100px; /* Adjust the height as needed */
 }
 
 nav a {
@@ -45,5 +45,15 @@ footer {
 }
 
 .logo-footer {
-    height: 100px; /* L */
+    height: 50px; /* Adjust the height as needed */
+}
+
+/* RTL styles for Persian */
+body.fa, main.fa {
+    direction: rtl;
+    text-align: right;
+}
+
+nav a.fa {
+    float: left;
 }
