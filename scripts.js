@@ -8,7 +8,7 @@ const content = {
                 Final Project Documentation for the Computer Skills Workshop Course<br>
                 Setting up a personal website using GitHub Pages hosting service<br>
                 Course Instructor: Dr. Ali Behlouli<br>
-                First Semester of the Academic Year 2024 - 1
+                First Semester of the Academic Year 2024 - 2025
             `
         },
         description: {
@@ -52,7 +52,7 @@ const content = {
                 <br><br>
                 هدف این پروژه ایجاد دو وب‌سایت است:
                 <ul>
-                    <li>وب‌سایت شخصی علمی.</li>
+                    <li>وب‌سایت شخصی.</li>
                     <li>وب‌سایتی برای توضیح و معرفی پروژه پایانی یک درس علوم کامپیوتر و برنامه‌نویسی.</li>
                 </ul>
                 از ابزارها و قالب‌های مختلف استفاده کنید، محتوای وب‌سایت را طراحی کنید و آن را با استفاده از مایکروسافت آفیس آماده کنید. همچنین، وب‌سایت را با استفاده از کدهای HTML و CSS طراحی کنید. قالب‌ها و افزونه‌های کاربردی را برای جذب بیشتر مخاطبان به صفحه انتخاب کنید.
