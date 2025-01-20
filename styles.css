@@ -1,56 +1,66 @@
 @font-face {
-    font-family: 'B-NAZANIN';
-    src: url('https://raw.githubusercontent.com/hazardsnow/pweb/main/B-NAZANIN.TTF') format('TTF');
+    font-family: 'BNazanin';
+    src: url('https://raw.githubusercontent.com/student123/final-project/main/fonts/BNazanin.woff2') format('woff2');
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9; /* Light grey background */
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #333;
+    background-color: #004d99; /* Dark blue background */
     color: white;
-    padding: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .logo-header {
-    height: 100px; /* Adjust the height as needed */
+    height: 60px; /* Adjust the height as needed */
 }
 
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #ffcc00; /* Hover color */
 }
 
 main {
-    padding: 2rem;
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
 }
 
 h1, h2 {
-    color: #333;
+    color: #004d99; /* Dark blue color */
 }
 
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #333;
+    background-color: #004d99; /* Dark blue background */
     color: white;
     padding: 1rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .logo-footer {
-    height: 50px; /* Adjust the height as needed */
+    height: 40px; /* Adjust the height as needed */
 }
 
 .footer-text {
