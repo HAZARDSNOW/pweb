@@ -76,7 +76,7 @@ function getLanguage() {
 }
 
 function updateContent(lang) {
-    const page = window.location.pathname.split('/').pop().replace('.html', '');
+    const page = window.location.pathname.split('/').pop().replace('.html', '') || 'index';
     
     if (lang === 'fa') {
         document.getElementById('en-content').style.display = 'none';
@@ -85,6 +85,14 @@ function updateContent(lang) {
         document.getElementById('fa-content').style.display = 'none';
         document.getElementById('en-content').style.display = 'block';
     }
+
+    const elements = document.querySelectorAll('#content h1, #content p, #content section h2, #content section p');
+    elements.forEach((el) => {
+        const key = el.getAttribute('data-key');
+        if (key && content[lang][page][key]) {
+            el.innerHTML = content[lang][page][key];
+        }
+    });
 }
 
 // Set the language when the page loads
