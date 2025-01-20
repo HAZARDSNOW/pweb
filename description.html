@@ -8,31 +8,36 @@
 </head>
 <body>
     <header>
-        <img src="path/to/your/logo.png" alt="University Logo" class="logo">
+        <img src="https://raw.githubusercontent.com/student123/final-project/main/logo.png" alt="University Logo" class="logo-header">
         <nav>
             <a href="index.html">Home</a>
             <a href="description.html">Description</a>
+            <a href="#" id="lang-en" onclick="setLanguage('en')">English</a>
+            <a href="#" id="lang-fa" onclick="setLanguage('fa')">فارسی</a>
         </nav>
     </header>
-    <main>
-        <h1>Project Description</h1>
-        <p>Here you can provide an in-depth description of your final project.</p>
+    <main id="content">
+        <h1 data-key="title">Project Description</h1>
         <section>
-            <h2>Introduction</h2>
-            <p>Introduce the project, its objectives, and scope.</p>
+            <h2 data-key="intro">Introduction</h2>
+            <p data-key="intro">Introduce the project, its objectives, and scope.</p>
         </section>
         <section>
-            <h2>Methodology</h2>
-            <p>Describe the methods used to complete the project.</p>
+            <h2 data-key="methodology">Methodology</h2>
+            <p data-key="methodology">Describe the methods used to complete the project.</p>
         </section>
         <section>
-            <h2>Results</h2>
-            <p>Present the results of your work.</p>
+            <h2 data-key="results">Results</h2>
+            <p data-key="results">Present the results of your work.</p>
         </section>
         <section>
-            <h2>Conclusion</h2>
-            <p>Summarize your findings and discuss their implications.</p>
+            <h2 data-key="conclusion">Conclusion</h2>
+            <p data-key="conclusion">Summarize your findings and discuss their implications.</p>
         </section>
     </main>
+    <footer>
+        <img src="https://raw.githubusercontent.com/student123/final-project/main/logo.png" alt="University Logo" class="logo-footer">
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
