@@ -57,3 +57,7 @@ body.fa, main.fa {
 nav a.fa {
     float: left;
 }
+
+header.fa, footer.fa {
+    flex-direction: row-reverse;
+}
