@@ -8,6 +8,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9; /* Light grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
 }
 
 header {
@@ -17,7 +22,10 @@ header {
     background-color: #004d99; /* Dark blue background */
     color: white;
     padding: 1rem 2rem;
+    width: 100%; /* Ensure header spans full width */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: absolute;
+    top: 0;
 }
 
 .logo-header {
@@ -37,13 +45,15 @@ nav a:hover {
 }
 
 main {
-    padding: 3rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     border-radius: 8px; /* Rounded corners */
-    text-align: center; /* Center align the main content */
+    padding: 2rem;
 }
 
 h1, h2 {
@@ -53,6 +63,7 @@ h1, h2 {
 p {
     line-height: 1.6;
     color: #333;
+    text-align: left; /* Align text to the left */
 }
 
 .logo-container {
@@ -61,8 +72,6 @@ p {
 
 .main-logo {
     height: 150px; /* Adjust the height as needed for the big logo */
-    display: block;
-    margin: 0 auto; /* Center align the big logo */
 }
 
 footer {
@@ -72,7 +81,10 @@ footer {
     background-color: #004d99; /* Dark blue background */
     color: white;
     padding: 1rem;
+    width: 100%; /* Ensure footer spans full width */
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: absolute;
+    bottom: 0;
 }
 
 .logo-footer {
@@ -88,6 +100,10 @@ footer {
     text-align: center;
 }
 
+.text-content {
+    text-align: left; /* Left-align the text */
+}
+
 /* RTL styles for Persian */
 body.fa, main.fa {
     direction: rtl;
@@ -101,6 +117,10 @@ nav a.fa {
 
 header.fa, footer.fa {
     flex-direction: row-reverse;
+}
+
+.text-content.fa {
+    text-align: right; /* Right-align the text for Persian */
 }
 
 #fa-content {
