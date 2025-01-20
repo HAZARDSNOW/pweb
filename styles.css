@@ -8,6 +8,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 header {
@@ -21,6 +26,7 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
+    z-index: 1000;
 }
 
 .logo-header {
@@ -77,12 +83,11 @@ footer {
 .centered-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    text-align: center; /* Center the text */
     background-color: white;
-    padding: 80px 2rem;
+    padding: 20px;
     box-sizing: border-box;
 }
 
@@ -93,8 +98,7 @@ h1, h2 {
 p {
     line-height: 1.6;
     color: #333;
-    margin: 0;
-    text-align: center; /* Ensure all paragraphs are centered */
+    text-align: center; /* Center text */
 }
 
 .logo-container {
@@ -111,7 +115,7 @@ body.fa, main.fa {
 }
 
 body.fa .text-content {
-    text-align: center; /* Ensure text is centered in Persian */
+    text-align: center; /* Center text for Persian */
 }
 
 nav a.fa {
@@ -144,10 +148,10 @@ main {
 }
 
 main p {
-    text-align: center; /* Ensure paragraphs in main content are centered */
+    text-align: center; /* Center paragraphs */
     margin: 1rem 0;
 }
 
 body.fa main p {
-    text-align: center; /* Ensure paragraphs in Persian content are centered */
+    text-align: center; /* Center paragraphs for Persian */
 }
