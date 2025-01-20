@@ -94,6 +94,7 @@ p {
     line-height: 1.6;
     color: #333;
     margin: 0;
+    text-align: center; /* Ensure all paragraphs are centered */
 }
 
 .logo-container {
@@ -110,7 +111,7 @@ body.fa, main.fa {
 }
 
 body.fa .text-content {
-    text-align: right;
+    text-align: center; /* Ensure text is centered in Persian */
 }
 
 nav a.fa {
@@ -143,10 +144,10 @@ main {
 }
 
 main p {
-    text-align: justify;
+    text-align: center; /* Ensure paragraphs in main content are centered */
     margin: 1rem 0;
 }
 
 body.fa main p {
-    text-align: justify;
+    text-align: center; /* Ensure paragraphs in Persian content are centered */
 }
