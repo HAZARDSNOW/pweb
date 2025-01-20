@@ -134,8 +134,7 @@ body.fa #fa-content {
 }
 
 main {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 2rem;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -144,9 +143,10 @@ main {
 }
 
 main p {
-    text-align: left;
+    text-align: justify;
+    margin: 1rem 0;
 }
 
 body.fa main p {
-    text-align: right;
+    text-align: justify;
 }
