@@ -3,6 +3,7 @@
     src: url('https://raw.githubusercontent.com/student123/final-project/main/fonts/BNazanin.woff2') format('woff2');
 }
 
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -39,15 +40,42 @@ nav a:hover {
     color: #ffcc00; /* Hover color */
 }
 
-main {
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #004d99; /* Dark blue background */
+    color: white;
+    padding: 1rem;
+    width: 100%; /* Ensure footer spans full width */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: fixed;
+    bottom: 0;
+}
+
+.logo-footer {
+    height: 40px; /* Adjust the height as needed */
+}
+
+.footer-text {
+    margin-left: 1rem;
+    font-size: 1rem; /* Adjust the size as needed */
+}
+
+/* Styles for Homepage */
+.centered-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height */
-    padding-top: 80px; /* Ensure content is below the header */
-    text-align: center;
+    text-align: center; /* Center align the text */
     background-color: white;
+}
+
+main.centered-content {
+    padding-top: 80px; /* Ensure content is below the header */
+    padding-bottom: 80px; /* Ensure content is above the footer */
 }
 
 h1, h2 {
@@ -67,8 +95,51 @@ p {
     height: 150px; /* Adjust the height as needed for the big logo */
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #004d99;[_{{{CITATION{{{_1{](https://github.com/frame00/oo-elements/tree/cb23701ba21686c12ecca8d856a08f83c7e58000/.github%2FCONTRIBUTING.md)
+/* RTL styles for Persian */
+body.fa, main.fa {
+    direction: rtl;
+    font-family: 'BNazanin', sans-serif;
+}
+
+body.fa .text-content {
+    text-align: right; /* Right align text for Persian content */
+}
+
+nav a.fa {
+    float: left;
+}
+
+header.fa, footer.fa {
+    flex-direction: row-reverse;
+}
+
+#fa-content {
+    display: none;
+}
+
+body.fa #en-content {
+    display: none;
+}
+
+body.fa #fa-content {
+    display: block;
+}
+
+/* Description Page Specific Styles */
+main {
+    padding-top: 100px; /* Ensure content is below the header */
+    padding-bottom: 100px; /* Ensure content is above the footer */
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    margin: 2rem;
+    max-width: 1200px;
+}
+
+main p {
+    text-align: left; /* Ensure text is left aligned */
+}
+
+body.fa main p {
+    text-align: right; /* Ensure text is right aligned for Persian content */
+}
