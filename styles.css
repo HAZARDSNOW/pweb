@@ -21,7 +21,7 @@ header {
 }
 
 .logo-header {
-    height: 60px; /* Adjust the height as needed */
+    height: 100px; /* Adjust the height as needed */
 }
 
 nav a {
@@ -60,7 +60,7 @@ footer {
 }
 
 .logo-footer {
-    height: 40px; /* Adjust the height as needed */
+    height: 60px; /* Adjust the height as needed */
 }
 
 .footer-text {
