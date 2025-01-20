@@ -65,4 +65,27 @@ const content = {
 
 function setLanguage(lang) {
     localStorage.setItem('language', lang);
-    document.body.classList.toggle('fa', lang === '[_{{{CITATION{{{_1{](https://github.com/iamedriancamacho/FIS/tree/8fe6ba1a14ce13cba2ad5d21abf91a11dec3db5d/univadmin%2Funivhome.php)
+    document.body.classList.toggle('fa', lang === 'fa');
+    updateContent(lang);
+}
+
+function getLanguage() {
+    const lang = localStorage.getItem('language') || 'en';
+    document.body.classList.toggle('fa', lang === 'fa');
+    updateContent(lang);
+}
+
+function updateContent(lang) {
+    const page = window.location.pathname.split('/').pop().replace('.html', '');
+    
+    if (lang === 'fa') {
+        document.getElementById('en-content').style.display = 'none';
+        document.getElementById('fa-content').style.display = 'block';
+    } else {
+        document.getElementById('fa-content').style.display = 'none';
+        document.getElementById('en-content').style.display = 'block';
+    }
+}
+
+// Set the language when the page loads
+window.onload = getLanguage;
