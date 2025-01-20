@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'B-NAZANIN';
-    src: url('https://raw.githubusercontent.com/hazardsnow/pweb/main/B-NAZANIN.TTF') format('TTF');
+    font-family: 'BNazanin';
+    src: url('https://raw.githubusercontent.com/student123/final-project/main/fonts/BNazanin.woff2') format('woff2');
 }
 
 body {
@@ -43,6 +43,7 @@ main {
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center align the main content */
 }
 
 h1, h2 {
@@ -52,6 +53,16 @@ h1, h2 {
 p {
     line-height: 1.6;
     color: #333;
+}
+
+.logo-container {
+    margin-bottom: 2rem; /* Space below the big logo */
+}
+
+.main-logo {
+    height: 150px; /* Adjust the height as needed for the big logo */
+    display: block;
+    margin: 0 auto; /* Center align the big logo */
 }
 
 footer {
@@ -73,11 +84,15 @@ footer {
     font-size: 1rem; /* Adjust the size as needed */
 }
 
+.centered-content {
+    text-align: center;
+}
+
 /* RTL styles for Persian */
 body.fa, main.fa {
     direction: rtl;
     text-align: right;
-    font-family: 'B-NAZANIN', sans-serif;
+    font-family: 'BNazanin', sans-serif;
 }
 
 nav a.fa {
