@@ -21,7 +21,7 @@ header {
 }
 
 .logo-header {
-    height: 100px; /* Adjust the height as needed */
+    height: 60px; /* Adjust the height as needed */
 }
 
 nav a {
@@ -49,6 +49,11 @@ h1, h2 {
     color: #004d99; /* Dark blue color */
 }
 
+p {
+    line-height: 1.6;
+    color: #333;
+}
+
 footer {
     display: flex;
     align-items: center;
@@ -60,7 +65,7 @@ footer {
 }
 
 .logo-footer {
-    height: 60px; /* Adjust the height as needed */
+    height: 40px; /* Adjust the height as needed */
 }
 
 .footer-text {
@@ -81,4 +86,16 @@ nav a.fa {
 
 header.fa, footer.fa {
     flex-direction: row-reverse;
+}
+
+#fa-content {
+    display: none;
+}
+
+body.fa #en-content {
+    display: none;
+}
+
+body.fa #fa-content {
+    display: block;
 }
