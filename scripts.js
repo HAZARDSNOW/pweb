@@ -30,12 +30,18 @@ const content = {
 function setLanguage(lang) {
     localStorage.setItem('language', lang);
     document.body.classList.toggle('fa', lang === 'fa');
+    document.querySelector('main').classList.toggle('fa', lang === 'fa');
+    document.querySelector('header').classList.toggle('fa', lang === 'fa');
+    document.querySelector('footer').classList.toggle('fa', lang === 'fa');
     updateContent(lang);
 }
 
 function getLanguage() {
     const lang = localStorage.getItem('language') || 'en';
     document.body.classList.toggle('fa', lang === 'fa');
+    document.querySelector('main').classList.toggle('fa', lang === 'fa');
+    document.querySelector('header').classList.toggle('fa', lang === 'fa');
+    document.querySelector('footer').classList.toggle('fa', lang === 'fa');
     updateContent(lang);
 }
 
