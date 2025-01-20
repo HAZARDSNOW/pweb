@@ -1,7 +1,7 @@
 const content = {
     en: {
         index: {
-            title: "Welcome to My Final Project",
+            title: "Welcome to Final Project",
             description: "This is the homepage. Navigate to the Description page for more details about the project."
         },
         description: {
@@ -14,7 +14,7 @@ const content = {
     },
     fa: {
         index: {
-            title: "به پروژه نهایی من خوش آمدید",
+            title: "به پروژه نهایی خوش آمدید",
             description: "این صفحه اصلی است. برای جزئیات بیشتر در مورد پروژه به صفحه توضیحات بروید."
         },
         description: {
